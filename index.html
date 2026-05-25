@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curs gratuit</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-phone-mask.css" />
 
     <!-- Google Tag Manager -->
     <script>
@@ -72,10 +73,7 @@
         </div>
 
         <div class="gc-hero-image">
-          <img
-            src="assets/240.webp"
-            alt="Figma workflow"
-          />
+          <img src="assets/240.webp" alt="Figma workflow" />
         </div>
       </div>
     </section>
@@ -431,10 +429,7 @@
 
         <div class="gc-founder-row">
           <div class="gc-founder-image">
-            <img
-              src="assets/sergiu.webp"
-              alt="Fondator Webcase"
-            />
+            <img src="assets/sergiu.webp" alt="Fondator Webcase" />
           </div>
 
           <div class="gc-founder-content">
@@ -458,10 +453,7 @@
 
         <div class="gc-team-box">
           <div class="gc-team-box-image">
-            <img
-              src="assets/daniel.webp"
-              alt="Echipa Webcase"
-            />
+            <img src="assets/daniel.webp" alt="Echipa Webcase" />
           </div>
 
           <div class="gc-team-box-content">
@@ -588,5 +580,174 @@
         </div>
       </div>
     </section>
+
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal-box">
+        <button type="button" class="modal-close" aria-label="Închide formular">
+          ×
+        </button>
+        <h3 class="modal-title">
+          Completează formularul pentru acces la cursul gratuit!
+        </h3>
+        <form
+          id="ltForm4063577"
+          class="lt-normal-form lt-form-inner lt-form"
+          action="https://community.webcase.md/pl/lite/block-public/process-html?id=2136579084"
+          method="post"
+          data-open-new-window="0"
+        >
+          <input type="hidden" name="formParams[setted_offer_id]" />
+
+          <div class="field-content">
+            <div class="field-label">NUME</div>
+            <input
+              type="text"
+              maxlength="60"
+              id="name"
+              placeholder="Prenume Nume"
+              name="formParams[full_name]"
+              value=""
+            />
+          </div>
+
+          <div class="field-content">
+            <div class="field-label">TELEFON</div>
+            <input
+              type="text"
+              maxlength="60"
+              id="phone"
+              placeholder="Numărul de telefon"
+              name="formParams[phone]"
+              value=""
+            />
+          </div>
+
+          <div class="field-content">
+            <div class="field-label">EMAIL</div>
+            <input
+              type="text"
+              maxlength="60"
+              id="email"
+              placeholder="Email-ul tău"
+              name="formParams[email]"
+              value=""
+            />
+          </div>
+
+          <button
+            type="submit"
+            id="button6973292"
+            style="color: #ffffff; background-color: #ff4365"
+            onclick="
+              if (window['btnprs67a9c45877cf7']) {
+                return false;
+              }
+              window['btnprs67a9c45877cf7'] = true;
+              setTimeout(function () {
+                window['btnprs67a9c45877cf7'] = false;
+              }, 6000);
+              return true;
+            "
+          >
+            Înregistrează-mă
+          </button>
+
+          <input
+            type="hidden"
+            id="136404967a9c458663d8"
+            name="__gc__internal__form__helper"
+            class="__gc__internal__form__helper"
+            value=""
+          />
+          <input
+            type="hidden"
+            id="136404967a9c458663d8ref"
+            name="__gc__internal__form__helper_ref"
+            class="__gc__internal__form__helper_ref"
+            value=""
+          />
+          <input type="hidden" name="requestTime" value="1739179096" />
+          <input
+            type="hidden"
+            name="requestSimpleSign"
+            value="f4c5251a072af950fa5fa25430e4676c"
+          />
+          <input type="hidden" name="isHtmlWidget" value="1" />
+        </form>
+      </div>
+      <span id="gccounterImgContainer"></span>
+      <script>
+        window.addEventListener("load", function () {
+          let loc = document.getElementById("136404967a9c458663d8");
+          loc.value = window.location.href;
+          let ref = document.getElementById("136404967a9c458663d8ref");
+          ref.value = document.referrer;
+
+          let statUrl =
+            "https://community.webcase.md/stat/counter?ref=" +
+            encodeURIComponent(document.referrer) +
+            "&loc=" +
+            encodeURIComponent(document.location.href);
+          document.getElementById("gccounterImgContainer").innerHTML =
+            "<img width=1 height=1 style='display:none' id='gccounterImg' src='" +
+            statUrl +
+            "'/>";
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var modal = document.getElementById("modal");
+          var openButtons = document.querySelectorAll(
+            "a.gc-hero-btn, a.gc-free-btn, a.gc-final-btn",
+          );
+          var closeButton = modal.querySelector(".modal-close");
+
+          function openModal(event) {
+            event.preventDefault();
+            modal.classList.add("modal-open");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.style.overflow = "hidden";
+          }
+
+          function closeModal() {
+            modal.classList.remove("modal-open");
+            modal.setAttribute("aria-hidden", "true");
+            document.body.style.overflow = "";
+          }
+
+          openButtons.forEach(function (button) {
+            button.addEventListener("click", openModal);
+          });
+
+          closeButton.addEventListener("click", closeModal);
+
+          modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+              closeModal();
+            }
+          });
+        });
+      </script>
+    </div>
+
+    <!-- script pentru widget GT cu masca -->
+    <!-- intl-tel-input CSS -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    /></noscript>
+    <script
+      src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"
+      defer
+    ></script>
   </body>
 </html>
