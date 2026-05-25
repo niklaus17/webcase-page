@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 h1,
 h2,
@@ -13,11 +19,14 @@ button {
     font-family: "Inter" !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .gc-hero-section {
     width: 100%;
     padding: 70px 20px;
     background: #fbfaf7;
-    font-family: Arial, sans-serif;
 }
 
 .gc-hero-container {
@@ -215,7 +224,6 @@ button {
     width: 100%;
     padding: 45px 20px 42px;
     background: #f2eee8;
-    font-family: Arial, sans-serif;
 }
 
 .gc-stats-container {
@@ -300,7 +308,6 @@ button {
     width: 100%;
     padding: 90px 20px 80px;
     background: #fbfaf7;
-    font-family: Arial, sans-serif;
 }
 
 .gc-free-container {
@@ -451,7 +458,6 @@ button {
     width: 100%;
     padding: 80px 20px 90px;
     background: #fff4e4;
-    font-family: Arial, sans-serif;
 }
 
 .gc-results-container {
@@ -674,7 +680,6 @@ button {
     width: 100%;
     padding: 90px 20px 80px;
     background: #fbfaf7;
-    font-family: Arial, sans-serif;
 }
 
 .gc-steps-container {
@@ -860,7 +865,6 @@ button {
     width: 100%;
     padding: 90px 20px 80px;
     background: #fbfaf7;
-    font-family: Arial, sans-serif;
 }
 
 .gc-audience-container {
@@ -1047,7 +1051,6 @@ button {
     width: 100%;
     padding: 80px 20px 70px;
     background: #fbfaf7;
-    font-family: Arial, sans-serif;
 }
 
 .gc-team-container {
@@ -1251,7 +1254,6 @@ button {
     width: 100%;
     padding: 80px 20px 90px;
     background: #fbfaf7;
-    font-family: Arial, sans-serif;
 }
 
 .gc-faq-container {
@@ -1379,7 +1381,6 @@ button {
     width: 100%;
     padding: 70px 20px 60px;
     background: radial-gradient(circle at top left, #ff6538 0%, #e95a30 45%, #9f351d 100%);
-    font-family: Arial, sans-serif;
     color: #fff;
 }
 
@@ -1530,7 +1531,6 @@ button {
     width: 100%;
     padding: 70px 20px 80px;
     background: #fbfaf7;
-    font-family: Arial, sans-serif;
 }
 
 .gc-footer-container {
