@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body, h1, h2, h3, h4, h5, h6, p, div, button {font-family: "Inter" !important;}
+
 .gc-hero-section {
     width: 100%;
     padding: 70px 20px;
