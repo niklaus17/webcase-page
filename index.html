@@ -6,7 +6,13 @@
     <title>Curs gratuit</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-phone-mask.css" />
+    <script src="script-phone-mask.js" defer></script>
 
+<!-- intl-tel-input CSS -->
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js" defer></script>
+<!-- end intl-tel-input CSS -->
+ 
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -22,6 +28,7 @@
     </script>
     <!-- End Google Tag Manager -->
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
@@ -728,26 +735,5 @@
         });
       </script>
     </div>
-
-    <!-- script pentru widget GT cu masca -->
-    <!-- intl-tel-input CSS -->
-    <link
-      rel="preload"
-      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
-    /></noscript>
-    <script
-      src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"
-      defer
-    ></script>
   </body>
 </html>
